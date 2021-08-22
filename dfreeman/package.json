@@ -14,6 +14,7 @@
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
     "eslint": "^7.32.0",
+    "gh-pages": "^3.2.3",
     "jest": "^27.0.6",
     "ts-jest": "^27.0.5",
     "typescript": "^4.3.5",
@@ -22,7 +23,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "yarn build --base /langjam-2021/ && gh-pages -d dist --remote dfreeman"
   },
   "prettier": {
     "singleQuote": true,
